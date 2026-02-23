@@ -1,0 +1,14 @@
+[package]
+name = "solar-system-sim"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+nyx-space = "2.1.0"
+hifitime = "4.0"
+anise = "0.5.4"
+anyhow = "1.0.100"
+bevy = { version = "0.17.2", features = ["jpeg"] }
+bevy_egui = "0.38"
+rayon = "1.10"
+image = { version = "0.25", default-features = false, features = ["gif", "png"] }
