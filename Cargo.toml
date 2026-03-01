@@ -2,6 +2,7 @@
 name = "solar-system-sim"
 version = "0.1.0"
 edition = "2024"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 nyx-space = "2.1.0"

@@ -1,7 +1,7 @@
 # Solar System Simulator
 
 Interactive 3D visualization of the Earth-Moon system, built to explore
-trajectories for [lunar sling launchers](https://rklaehn.github.io/blog/lunar-sling-launchers/).
+trajectories for [lunar sling launchers](https://blog.klaehn.org/blog/lunar-sling-launchers/).
 
 The GUI is vibe coded with Claude. The trajectory propagation is solid — it uses
 [nyx-space](https://nyxspace.com/) for orbit propagation and
@@ -58,6 +58,17 @@ Requires the ANISE data files in `data/01_planetary/`:
 | F | Screenshot |
 | G | Toggle GIF recording |
 
+## Getting started (no Rust experience needed)
+
+1. Install Rust: https://rustup.rs/
+2. Clone and run:
+   ```
+   git clone <this repo>
+   cd solar-system-sim
+   cargo run --release
+   ```
+   The first build takes a few minutes. Subsequent runs are fast.
+
 ## Dependencies
 
 - [bevy](https://bevyengine.org/) 0.17 — rendering and ECS
@@ -65,3 +76,11 @@ Requires the ANISE data files in `data/01_planetary/`:
 - [nyx-space](https://nyxspace.com/) — high fidelity orbit propagation
 - [anise](https://docs.rs/anise) — JPL ephemeris access
 - [hifitime](https://docs.rs/hifitime) — high precision time handling
+
+## Blog post
+
+[Lunar Sling Launchers](https://blog.klaehn.org/blog/lunar-sling-launchers/)
+
+## Credits
+
+Created by [Rüdiger Klaehn](https://blog.klaehn.org/) using [Claude](https://claude.ai/).
