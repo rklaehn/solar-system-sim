@@ -70,18 +70,18 @@ binary. The `assets/` folder must be in the same directory as the binary.
 ### macOS
 
 macOS will block unsigned binaries. To run it, remove the quarantine attribute
-and make it executable:
+and, if needed, make it executable:
 
 ```
 xattr -d com.apple.quarantine solar-system-sim
-chmod +x solar-system-sim
+# If you get "Permission denied", run: chmod +x solar-system-sim
 ./solar-system-sim
 ```
 
 ### Linux
 
 ```
-chmod +x solar-system-sim
+# If you get "Permission denied", run: chmod +x solar-system-sim
 ./solar-system-sim
 ```
 
