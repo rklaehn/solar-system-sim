@@ -53,6 +53,7 @@ jobs:
           mkdir -p staging
           cp target/${{ matrix.target }}/release/${{ matrix.artifact }} staging/
           cp -r assets staging/
+          cp -r data staging/
           cd staging
           tar czf ../solar-system-sim-${{ matrix.target }}.tar.gz .
 
@@ -62,6 +63,7 @@ jobs:
           New-Item -ItemType Directory -Path staging
           Copy-Item target/${{ matrix.target }}/release/${{ matrix.artifact }} staging/
           Copy-Item -Recurse assets staging/
+          Copy-Item -Recurse data staging/
           Compress-Archive -Path staging/* -DestinationPath solar-system-sim-${{ matrix.target }}.zip
 
       - name: Upload artifact
