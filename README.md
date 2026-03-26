@@ -58,6 +58,37 @@ Requires the ANISE data files in `data/01_planetary/`:
 | F | Screenshot |
 | G | Toggle GIF recording |
 
+## Pre-built binaries
+
+Pre-built binaries are available on the
+[Releases](../../releases) page for Linux (x86_64), macOS (Apple Silicon),
+and Windows (x86_64).
+
+Download the archive for your platform, extract it, and run the `solar-system-sim`
+binary. The `assets/` folder must be in the same directory as the binary.
+
+### macOS
+
+macOS will block unsigned binaries. To run it, remove the quarantine attribute
+and make it executable:
+
+```
+xattr -d com.apple.quarantine solar-system-sim
+chmod +x solar-system-sim
+./solar-system-sim
+```
+
+### Linux
+
+```
+chmod +x solar-system-sim
+./solar-system-sim
+```
+
+### Windows
+
+Extract the zip and double-click `solar-system-sim.exe`.
+
 ## Getting started (no Rust experience needed)
 
 1. Install Rust: https://rustup.rs/
